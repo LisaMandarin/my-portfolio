@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import { FaLinkedinIn } from "react-icons/fa";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -22,31 +19,35 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href="https://www.linkedin.com/in/minting0608/"
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+            <FaLinkedinIn />
+            &nbsp;View LinkedIn Profile
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
-        </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+        <Row
+          style={{
+            justifyContent: "center",
+            paddingTop: "40px",
+            color: "white",
+            fontSize: "1.2em",
+          }}
+        >
+          <p style={{ textAlign: "center" }}>
+            Resume PDF coming soon. In the meantime, please visit my{" "}
+            <a
+              href="https://www.linkedin.com/in/minting0608/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#c084f5" }}
+            >
+              LinkedIn profile
+            </a>
+            .
+          </p>
         </Row>
       </Container>
     </div>

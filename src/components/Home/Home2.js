@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/my-photo.webp";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -13,36 +13,39 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              Since September 2022, I have been studying programming languages
+              and enrolled in the Software Development program at{" "}
+              <b className="purple">Brigham Young University–Idaho</b>. The
+              structured education has given me a solid foundation in
+              programming and system architecture design.
               <br />
               <br />
               I’m proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  React, Vue, TypeScript, Next.js, and Tailwind CSS{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — and I enjoy working across both frontend and backend stacks.
               <br />
               <br />
-              My key areas of interest include developing
+              My key areas of interest include building
               <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
+                <b className="purple"> Full-stack Web Applications </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and{" "}
+              <i>
+                <b className="purple">Language Learning Tools</b>
+              </i>
+              {" "}that bridge technology and human communication.
               <br />
               <br />
               Whenever possible, I love building projects with
               <b className="purple"> Node.js </b> and modern frameworks like{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
+                <b className="purple">React.js</b>,{" "}
+                <b className="purple">Vue.js</b>, and{" "}
                 <b className="purple">Next.js</b>.
               </i>
             </p>

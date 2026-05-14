@@ -31,8 +31,8 @@ function Projects() {
         </div>
         <p style={{ color: "white" }}>
           {isEnglish
-            ? "Here are a few projects I've worked on recently."
-            : "以下是我近期完成的幾個專案。"}
+            ? "Here are a few featured projects I've worked on."
+            : "以下是我做過的幾個重點專案。"}
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projectsData.map((project) => (

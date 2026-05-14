@@ -3,7 +3,12 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+const pdf = "/resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -19,35 +24,33 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href="https://www.linkedin.com/in/minting0608/"
+            href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <FaLinkedinIn />
-            &nbsp;View LinkedIn Profile
+            <AiOutlineDownload />
+            &nbsp;Download CV
           </Button>
         </Row>
 
-        <Row
-          style={{
-            justifyContent: "center",
-            paddingTop: "40px",
-            color: "white",
-            fontSize: "1.2em",
-          }}
-        >
-          <p style={{ textAlign: "center" }}>
-            Resume PDF coming soon. In the meantime, please visit my{" "}
-            <a
-              href="https://www.linkedin.com/in/minting0608/"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "#c084f5" }}
-            >
-              LinkedIn profile
-            </a>
-            .
-          </p>
+        <Row className="resume" style={{ justifyContent: "center", position: "relative" }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Document file={pdf}>
+              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            </Document>
+          </div>
+        </Row>
+
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
         </Row>
       </Container>
     </div>

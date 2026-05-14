@@ -12,11 +12,11 @@ function AboutCard() {
             from <span className="purple">Taiwan</span>.
             <br />
             I'm currently a{" "}
-            <span className="purple">Full-stack Developer</span> actively
+            <span className="purple">Full-stack Developer and AI Engineer</span> actively
             seeking opportunities in web development.
             <br />
             I hold an{" "}
-            <span className="purple">Associate Degree in Software Development</span>{" "}
+            <span className="purple">Bachelor's Degree in Software Development</span>{" "}
             from{" "}
             <span className="purple">Brigham Young University–Idaho</span>.
             <br />
@@ -38,7 +38,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "If you fail to plan, you are planning to fail!"{" "}
           </p>
           <footer className="blockquote-footer">Min-ting</footer>
         </blockquote>

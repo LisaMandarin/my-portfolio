@@ -4,13 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
+  AiFillGithub,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -94,10 +94,20 @@ function NavBar() {
               <Button
                 href="https://github.com/LisaMandarin"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
+                aria-label="GitHub"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <AiFillGithub style={{ fontSize: "1.2em" }} />
+              </Button>{" "}
+              <Button
+                href="https://www.linkedin.com/in/minting0608/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fork-btn-inner"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
           </Nav>

@@ -1,54 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/my-photo.webp";
 import Tilt from "react-parallax-tilt";
+import { aboutContent } from "../../data/content";
 
 function Home2() {
+  const [language, setLanguage] = useState("ENG");
+  const isEnglish = language === "ENG";
+  const intro = isEnglish ? aboutContent.introENG : aboutContent.introCH;
+  const summary = isEnglish ? aboutContent.summaryENG : aboutContent.summaryCH;
+
+  const toggleLanguage = () => {
+    setLanguage(isEnglish ? "CH" : "ENG");
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
+            <div className="home-about-heading">
+              <h1>
+                LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              </h1>
+              <button
+                type="button"
+                className="about-language-toggle"
+                onClick={toggleLanguage}
+                aria-label="Toggle About Me language"
+              >
+                {isEnglish ? "中文" : "EN"}
+              </button>
+            </div>
             <p className="home-about-body">
-              Since September 2022, I have been studying programming languages
-              and enrolled in the Software Development program at{" "}
-              <b className="purple">Brigham Young University–Idaho</b>. The
-              structured education has given me a solid foundation in
-              programming and system architecture design.
-              <br />
-              <br />
-              I’m proficient in
-              <i>
-                <b className="purple">
-                  {" "}
-                  React, Vue, TypeScript, Next.js, and Tailwind CSS{" "}
-                </b>
-              </i>
-              — and I enjoy working across both frontend and backend stacks.
-              <br />
-              <br />
-              My key areas of interest include building
-              <i>
-                <b className="purple"> Full-stack Web Applications </b>
-              </i>
-              and{" "}
-              <i>
-                <b className="purple">Language Learning Tools</b>
-              </i>
-              {" "}that bridge technology and human communication.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b>,{" "}
-                <b className="purple">Vue.js</b>, and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              {intro}
             </p>
+            <ul className="home-about-summary">
+              {summary.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

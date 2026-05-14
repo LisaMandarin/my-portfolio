@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/my-photo.webp";
 import Tilt from "react-parallax-tilt";
 import { aboutContent } from "../../data/content";
 
@@ -43,7 +42,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src="/my-photo.webp" className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>

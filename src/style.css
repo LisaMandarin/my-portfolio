@@ -571,6 +571,54 @@ button:focus {
   border-radius: 10px !important;
 }
 
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px 0 24px;
+}
+
+.project-tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 14px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(15, 10, 28, 0.52);
+  border: 1.7px solid rgba(200, 137, 230, 0.72);
+  border-radius: 999px;
+  box-shadow: 0 7px 14px rgba(89, 4, 168, 0.22);
+  font-size: 0.88rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.project-tech-pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(211, 142, 242, 0.95);
+  box-shadow: 0 9px 18px rgba(116, 39, 164, 0.34);
+}
+
+.project-tech-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 767px) {
+  .project-tech-list {
+    gap: 8px;
+  }
+
+  .project-tech-pill {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+}
+
 .blog-img {
   padding: 0px !important;
   opacity: 0.8 !important;

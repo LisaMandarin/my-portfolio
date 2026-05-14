@@ -1,8 +1,52 @@
-export const projectsDdata = [
+import charityPreview from "../Assets/Projects/charity-preview.png";
+import notePreview from "../Assets/Projects/note-preview.png";
+import handcraftedPreview from "../Assets/Projects/handcrafted-preview.webp";
+import note2Preview from "../Assets/Projects/note2-preview.webp";
+
+export const techIconMap = {
+  "Ant Design": "devicon:antdesign",
+  API: "mdi:api",
+  Appwrite: "simple-icons:appwrite",
+  bcryptjs: "mdi:shield-key",
+  Docker: "devicon:docker",
+  Firebase: "devicon:firebase",
+  Flutter: "devicon:flutter",
+  Git: "devicon:git",
+  GitHub: "mdi:github",
+  GitLab: "logos:gitlab",
+  JavaScript: "devicon:javascript",
+  JWT: "simple-icons:jsonwebtokens",
+  jsPDF: "mdi:file-pdf-box",
+  "Microsoft Translator": "arcticons:microsoft-translator",
+  MongoDB: "devicon:mongodb",
+  MySQL: "devicon:mysql",
+  Netlify: "logos:netlify",
+  NextAuth: "simple-icons:nextdotjs",
+  "NextAuth.js": "simple-icons:nextdotjs",
+  "Next.js": "simple-icons:nextdotjs",
+  "Node.js": "devicon:nodejs",
+  NLP: "carbon:machine-learning-model",
+  "OAuth2": "simple-icons:auth0",
+  OCR: "mdi:text-recognition",
+  "OCR text extraction": "mdi:text-recognition",
+  OpenAI: "simple-icons:openai",
+  Postman: "devicon:postman",
+  React: "devicon:react",
+  "React.js": "devicon:react",
+  Sass: "devicon:sass",
+  Swagger: "devicon:swagger",
+  "Tailwind CSS": "devicon:tailwindcss",
+  TypeScript: "devicon:typescript",
+  Vercel: "devicon:vercel",
+  Vue: "devicon:vuejs",
+  "Vue.js": "devicon:vuejs",
+};
+
+export const projectsData = [
   {
     id: 1,
     name: "Charity Bridge",
-    image: "./images/charity-preview.png",
+    image: charityPreview,
     repoLink: "https://github.com/LisaMandarin/Charity-Bridge",
     siteLink: "https://charitybridge.netlify.app/",
     overviewEn:
@@ -23,7 +67,7 @@ export const projectsDdata = [
   {
     id: 2,
     name: "Note4English (React version)",
-    image: "./images/note-preview.png",
+    image: notePreview,
     repoLink: "https://gitlab.com/LisaMandarin/note4english",
     siteLink: "https://note4english.netlify.app/",
     overviewEn:
@@ -45,7 +89,7 @@ export const projectsDdata = [
   {
     id: 3,
     name: "Handcrafted Haven",
-    image: "./images/handcrafted-preview.webp",
+    image: handcraftedPreview,
     repoLink: "https://github.com/LisaMandarin/handcrafted-haven",
     siteLink: "https://handcrafted-haven-coral.vercel.app/",
     overviewEn:
@@ -67,7 +111,7 @@ export const projectsDdata = [
   {
     id: 4,
     name: "Note4English (Vue version)",
-    image: "./images/note2-preview.webp",
+    image: note2Preview,
     repoLink: "https://github.com/LisaMandarin/note4English",
     siteLink: "https://note-4-english.netlify.app/",
     overviewEn:
@@ -91,3 +135,5 @@ export const projectsDdata = [
     ],
   },
 ];
+
+export const projectsDdata = projectsData;

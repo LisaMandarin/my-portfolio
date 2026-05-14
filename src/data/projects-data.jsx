@@ -1,8 +1,3 @@
-import charityPreview from "../Assets/Projects/charity-preview.png";
-import notePreview from "../Assets/Projects/note-preview.png";
-import handcraftedPreview from "../Assets/Projects/handcrafted-preview.webp";
-import note2Preview from "../Assets/Projects/note2-preview.webp";
-
 export const techIconMap = {
   "Ant Design": "devicon:antdesign",
   API: "mdi:api",
@@ -46,7 +41,7 @@ export const projectsData = [
   {
     id: 1,
     name: "Charity Bridge",
-    image: charityPreview,
+    image: "/charity-preview.png",
     repoLink: "https://github.com/LisaMandarin/Charity-Bridge",
     siteLink: "https://charitybridge.netlify.app/",
     overviewEn:
@@ -67,7 +62,7 @@ export const projectsData = [
   {
     id: 2,
     name: "Note4English (React version)",
-    image: notePreview,
+    image: "/note-preview.png",
     repoLink: "https://gitlab.com/LisaMandarin/note4english",
     siteLink: "https://note4english.netlify.app/",
     overviewEn:
@@ -89,7 +84,7 @@ export const projectsData = [
   {
     id: 3,
     name: "Handcrafted Haven",
-    image: handcraftedPreview,
+    image: "/handcrafted-preview.webp",
     repoLink: "https://github.com/LisaMandarin/handcrafted-haven",
     siteLink: "https://handcrafted-haven-coral.vercel.app/",
     overviewEn:
@@ -111,7 +106,7 @@ export const projectsData = [
   {
     id: 4,
     name: "Note4English (Vue version)",
-    image: note2Preview,
+    image: "/note2-preview.webp",
     repoLink: "https://github.com/LisaMandarin/note4English",
     siteLink: "https://note-4-english.netlify.app/",
     overviewEn:

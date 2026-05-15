@@ -119,6 +119,20 @@ export const projectsData = [
       "Supabase",
     ],
   },
+  {
+    id: 5,
+    name: "Vocab Quiz",
+    image: "/vocab-preview.png",
+    repoLink: "https://github.com/LisaMandarin/flutter-vocab-quiz",
+    siteLink: "https://youtube.com/shorts/6mOQFTAij_k",
+    overviewEn:
+      "The goal is to allow users to practice their customized vocabulary words through flashcards and take a quiz to see the scores.",
+    overviewCh:
+      "目標是讓使用者透過單字卡練習自己客製化的單字，並進行測驗來查看分數。",
+    techStack: [
+      "Flutter",
+    ],
+  },
 ];
 
 export const projectsDdata = projectsData;

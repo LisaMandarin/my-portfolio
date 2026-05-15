@@ -18,7 +18,7 @@ function Projects() {
       <Container>
         <div className="project-heading-wrapper">
           <h1 className="project-heading">
-            My Recent <strong className="purple">Works </strong>
+            My Featured <strong className="purple">Works </strong>
           </h1>
           <button
             type="button"
